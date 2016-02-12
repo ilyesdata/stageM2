@@ -38,10 +38,11 @@ for doc in data:
 			except ValueError:
 				print("Oops!  some thing goes wrrong in transcriptions loading...N°"+str(b)+" ")
 		else:
+		#=============== lire et enregistrer les journaux  ===============
 			try:
 				jrn=open('H:/M2 recherche/Stage/MyDataSet/journaux/'+str(b)+'.txt','w')
 				jrn.write(str(doc.__dict__))
 				b += 1
 			except ValueError:
 				print("Oops!  some thing goes wrrong in journaux loading...N°"+str(b)+" ")
-#=============== lire juste les textex ==================================
+
