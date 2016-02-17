@@ -57,8 +57,8 @@ for doc1, doc2, linktype in data:
 		a += 1
 		b += 1		 
 		
-	except ValueError:
-		print("Oops!  pb...")
+	except ValueErroras as detail:
+		print ('Handling run-time error:', detail)
 	
 	
 
